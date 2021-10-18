@@ -7,7 +7,7 @@ import models.User;
 
 
 
-public class GroupRepository {
+public class GroupRepository implements IRepository {
     private ArrayList<Group> grpsRepo;
     private static GroupRepository groupRepo=null;
 

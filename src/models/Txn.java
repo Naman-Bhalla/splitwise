@@ -1,6 +1,6 @@
 package models;
 
-public class Txn {
+public class Txn extends BaseModel {
     private User payer;
     private User receiver;
     private Group grp;
@@ -23,4 +23,5 @@ public class Txn {
     public Group getGrp(){
         return this.grp;
     }
+    
 }

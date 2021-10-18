@@ -4,19 +4,19 @@ import java.util.ArrayList;
 
 import models.Txn;
 
-public class TxnRepository {
+public class TxnRepository implements IRepo {
 
     private static TxnRepository txnRepo=null;
-    private Txn txn;
+    private ArrayList<Txn> txnsRepo;
     public static TxnRepository getInstance(){
         if (txnRepo==null){
-            TxnRepository txnRepo = new TxnRepository();
+            txnRepo = new TxnRepository();
         }
         return txnRepo;
     }
 
-    // public Txn addTxn(Txn txn){
-    //     this.txnRepo.add(txn);
-    //     return this.txnRepo.get(this.txnRepo.size()-1);
-    // }
+    public Txn addTxn(Txn txn){
+        this.txnsRepo.add(txn);
+        return this.txnsRepo.get(this.txnsRepo.size()-1);
+    }
 }

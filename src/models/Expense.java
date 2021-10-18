@@ -1,10 +1,10 @@
 package models;
 import java.util.Map;
 import java.util.ArrayList;
-
+import models.BaseModel;
 import Config.Constants;
 
-public class Expense {
+public class Expense extends BaseModel{
  
     private Map <User,Float> contributors;
     private Float amt;

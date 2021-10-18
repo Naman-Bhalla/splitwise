@@ -3,7 +3,7 @@ package models;
 import java.util.ArrayList;
 import java.util.Map;
 
-public class Group {
+public class Group extends BaseModel {
     private ArrayList<User> members;
     private ArrayList<Expense> expenses;
     private ArrayList<Txn> txns;

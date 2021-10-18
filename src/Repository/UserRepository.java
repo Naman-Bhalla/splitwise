@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import models.User;
 
-public class UserRepository {
+public class UserRepository implements IRepository{
     private ArrayList<User> userrepo;
 
     public UserRepository(ArrayList<User> users){

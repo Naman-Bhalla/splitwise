@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import models.Expense;
 // import models.Group;
 // import models.Expense;
-public class Expenserepository {
+public class Expenserepository implements IRepository{
     private ArrayList<Expense> expenseRepo;
 
     public Expenserepository(ArrayList<Expense> expenses){
